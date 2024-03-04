@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
 
+
+
 public class CalculaIMC extends AppCompatActivity {
     EditText editTextPeso, editTextAltura, editTextNome;
 
