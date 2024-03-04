@@ -19,20 +19,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvNome"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:hint="@string/nomeACT3"
-        android:textAlignment="center"
-        android:textColorHint="#546E7A"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,46 +30,33 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <TextView
-        android:id="@+id/tvIMC"
-        android:layout_width="85dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:hint="@string/imc2"
-        android:textAlignment="center"
-        android:textColorHint="#546E7A"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/tvNome" />
-
-    <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
         android:text="@string/idade"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/tvIMC"
-        app:layout_constraintTop_toBottomOf="@+id/tvNome" />
+        app:layout_constraintStart_toEndOf="@+id/etIMCSitu"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeSitu" />
 
     <EditText
         android:id="@+id/etIdade"
-        android:layout_width="124dp"
+        android:layout_width="120dp"
         android:layout_height="48dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/_45"
         android:inputType="numberSigned"
         android:textAlignment="center"
         android:textColorHint="#546E7A"
-        app:layout_constraintEnd_toEndOf="@+id/tvNome"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toEndOf="@+id/etNomeSitu"
         app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/tvNome"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeSitu"
         tools:ignore="LabelFor" />
 
     <TextView
@@ -110,16 +83,16 @@
         app:layout_constraintTop_toBottomOf="@+id/etIdade">
 
         <RadioButton
-            android:id="@+id/rbMasculino"
+            android:id="@+id/rbFeminino"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="@string/masculino" />
+            android:text="@string/feminino" />
 
         <RadioButton
-            android:id="@+id/rbFeminino"
+            android:id="@+id/rbMasculino"
             android:layout_width="145dp"
             android:layout_height="wrap_content"
-            android:text="@string/feminino" />
+            android:text="@string/masculino" />
     </RadioGroup>
 
     <Button
@@ -129,9 +102,42 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
+        android:onClick="verificarVoltar"
         android:text="@string/verificar_e_voltar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/etNomeSitu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/nomeSitu"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etIMCSitu"
+        android:layout_width="108dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/imcSitu"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="#546E7A"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeSitu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

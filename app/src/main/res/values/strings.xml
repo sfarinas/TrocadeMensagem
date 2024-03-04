@@ -26,4 +26,6 @@
     <string name="verificar_e_voltar">Verificar e Voltar</string>
     <string name="_45">45</string>
     <string name="nameACT1">Name</string>
+    <string name="nomeSitu">nome</string>
+    <string name="imcSitu">imc</string>
 </resources>
