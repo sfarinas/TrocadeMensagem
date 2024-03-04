@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         intent2 = new Intent(getApplicationContext(), Situacao.class);
         intent2.putExtra("nome", etSituacao.getText().toString());
         intent2.putExtra("imc", Double.parseDouble(etSeuIMC.getText().toString()));
+        intent2.putExtra("situacao", etSituacao.getText().toString());
         startActivityForResult(intent2, ACTIVITY_REQUEST_SITUACAO);
     }
 }

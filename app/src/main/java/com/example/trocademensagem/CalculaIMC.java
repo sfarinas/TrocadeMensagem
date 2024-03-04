@@ -32,7 +32,7 @@ public class CalculaIMC extends AppCompatActivity {
         altura = Double.parseDouble(editTextAltura.getText().toString());
 
         imc = peso / Math.pow(altura,2);
-        Toast.makeText(getApplicationContext(), "IMC ="+String.valueOf(imc),
+        Toast.makeText(getApplicationContext(), "IMC ="+ String.valueOf(imc),
                 Toast.LENGTH_LONG).show();
 
         Intent returnIntent = new Intent();
