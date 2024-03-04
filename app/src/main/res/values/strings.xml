@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Troca de Mensagem</string>
+    <string name="digite_seu_nome">Digite seu Nome.</string>
+    <string name="name">Name :</string>
+    <string name="troca_de_mensagens_entre_atividades">Troca de mensagens entre Atividades</string>
+    <string name="calcular_imc">CALCULAR IMC</string>
+    <string name="verificar_situa_o">VERIFICAR SITUAÇÃO</string>
+    <string name="seu_imc">SEU IMC</string>
+    <string name="imc">IMC :</string>
+    <string name="situa_o">Situação</string>
+    <string name="vazio">vazio</string>
+    <string name="peso">Peso :</string>
+    <string name="nome">Nome</string>
+    <string name="altura">Altura :</string>
+    <string name="altura2">altura</string>
+    <string name="peso2">peso</string>
+    <string name="calcular_imc2">Calcular IMC</string>
+    <string name="imcACT3">IMC :</string>
+    <string name="nomeACT3">NOME</string>
+    <string name="imc2">IMC</string>
+    <string name="nome2">NOME :</string>
+    <string name="sexo">SEXO :</string>
+    <string name="idade">IDADE :</string>
+    <string name="masculino">Masculino</string>
+    <string name="feminino">Feminino</string>
+    <string name="verificar_e_voltar">Verificar e Voltar</string>
+    <string name="_45">45</string>
+    <string name="nameACT1">Name</string>
+</resources>
